@@ -1,0 +1,339 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Century Gothic";
+    background: url(../img/bg.jpg);
+    background-attachment: unset;
+}
+
+a {
+    color: #000;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+p {
+    font-size: 16px !important;
+}
+.bg-primary {
+    background-color: #3FAF82;
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: #3FAF82;
+}
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+section {
+    padding: 100px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3FAF82;
+}
+
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 16x;
+    font-weight: 700;
+    color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #3FAF82;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #3FAF82!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255,255,255,.3);
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-default.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: #fff;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #3FAF82;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #3FAF82;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #3FAF82;
+    }
+}
+
+header {
+    position: absolute;
+    top :0;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #3FAF82;
+    background-image: url(../img/header.jpg); 
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    height:600px;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+    background:rgba(0,0,0,.3);
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 20%;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header .header-content .header-content-inner a{
+    margin-top: 100px;
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+.section-heading {
+    margin-top: 0px;
+    margin-bottom:50px;
+}
+
+
+.blogger {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.blogger .section-heading {
+    color: #fff;
+}
+.bloggers-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+.bloggers-box img{
+    width:650px;
+    height:350px; 
+}
+.bloggers-box .bloggers-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background:rgba(0,0,0,.7);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.bloggers-box .bloggers-box-caption .bloggers-box-caption-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:100%;
+    text-align: center;
+}
+
+.bloggers-box .bloggers-box-caption .bloggers-box-caption-content .blogger-name {
+    position:absolute;
+    transform: translateX(-50%);
+    top:10%;
+    left:50%;
+    font-size: 16px;
+}
+.bloggers-box .bloggers-box-caption .bloggers-box-caption-content .blogger-name p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.bloggers-box:hover .bloggers-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .bloggers-box .bloggers-box-caption .bloggers-box-caption-content .blogger-avatar {
+        width:170px;
+        height:170px;
+    }
+
+    .bloggers-box .bloggers-box-caption .bloggers-box-caption-content .blogger-name {
+        font-size: 22px;
+    }
+}
+
+aside .bg-dark {
+    margin: 0;
+}
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+.call-to-action a{
+    color: #3FAF82;
+}
+.text-primary {
+    color: #3FAF82;
+}
+#contact,#contact a{
+    color:#3FAF82;
+}
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #3FAF82;
+    color: #fff;
+    background-color: #3FAF82;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-primary .badge {
+    color: #3FAF82;
+    background-color: #fff;
+}
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+:-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+#about {
+    margin-top: 95vh;
+}
